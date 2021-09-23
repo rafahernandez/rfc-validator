@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RafaHernandez\RfcValidator\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class RfcValidatorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'rfc-validator';
 
     public $description = 'My command';
 

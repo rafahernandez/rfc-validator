@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "rafahernandez/rfc-validator",
+    "description": "Utility to validate string for Mexican RFC",
     "keywords": [
-        ":vendor_name",
+        "rafahernandez",
         "laravel",
-        ":package_slug"
+        "rfc-validator"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/rafahernandez/rfc-validator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rafael Hernandez",
+            "email": "hola@rafaelhernandez.xyz",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "RafaHernandez\\RfcValidator\\": "src",
+            "RafaHernandez\\RfcValidator\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "RafaHernandez\\RfcValidator\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "RafaHernandez\\RfcValidator\\RfcValidatorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "RfcValidator": "RafaHernandez\\RfcValidator\\RfcValidatorFacade"
             }
         }
     },
