@@ -30,13 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RafaHernandez\\RfcValidator\\": "src",
-            "RafaHernandez\\RfcValidator\\Database\\Factories\\": "database/factories"
+            "RafaHernandez\\RfcValidator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RafaHernandez\\RfcValidator\\Tests\\": "tests"
+            "RafaHernandez\\RfcValidator\\Tests\\": "tests/"
         }
     },
     "scripts": {
