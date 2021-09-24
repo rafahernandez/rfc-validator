@@ -4,7 +4,6 @@ namespace RafaHernandez\RfcValidator;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RafaHernandez\RfcValidator\Commands\RfcValidatorCommand;
 
 class RfcValidatorServiceProvider extends PackageServiceProvider
 {
@@ -16,10 +15,6 @@ class RfcValidatorServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('rfc-validator')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_rfc-validator_table')
-            ->hasCommand(RfcValidatorCommand::class);
+            ->name('rfc-validator');
     }
 }

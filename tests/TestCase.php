@@ -23,14 +23,4 @@ class TestCase extends Orchestra
             RfcValidatorServiceProvider::class,
         ];
     }
-
-    public function getEnvironmentSetUp($app)
-    {
-        config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_rfc-validator_table.php.stub';
-        $migration->up();
-        */
-    }
 }
