@@ -24,10 +24,10 @@ it('can scope by type moral', function () {
     expect((new RFC(RFC::PERSONA_MORAL))->passes('test', 'XAXX010101000'))->toBeFalse();
 });
 
-it('returns generic message', function (){
+it('returns generic message', function () {
     expect((new RFC())->message())->toBe('El RFC no tiene un formato válido.');
 });
 
-it('returns specific message', function (){
+it('returns specific message', function () {
     expect((new RFC(RFC::PERSONA_MORAL))->message())->toBe('El RFC no es un formato válido para persona moral.');
 });

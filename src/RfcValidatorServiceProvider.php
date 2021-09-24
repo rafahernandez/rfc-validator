@@ -2,7 +2,6 @@
 
 namespace RafaHernandez\RfcValidator;
 
-use RafaHernandez\RfcValidator\Commands\RfcValidatorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

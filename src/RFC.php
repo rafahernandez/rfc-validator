@@ -1,15 +1,13 @@
 <?php
 
-
 namespace RafaHernandez\RfcValidator;
-
 
 use Illuminate\Contracts\Validation\Rule;
 
 class RFC implements Rule
 {
-    const PERSONA_FISICA = 'física';
-    const PERSONA_MORAL = 'moral';
+    public const PERSONA_FISICA = 'física';
+    public const PERSONA_MORAL = 'moral';
     private ?string $type;
 
     public function __construct(string $type = null)
@@ -19,15 +17,18 @@ class RFC implements Rule
 
     public function passes($attribute, $value): bool
     {
-        switch ($this->type){
+        switch ($this->type) {
             case self::PERSONA_FISICA:
                 $limit = '4';
+
                 break;
             case self::PERSONA_MORAL:
                 $limit = '3';
+
                 break;
             default:
                 $limit = '3,4';
+
                 break;
         }
 
@@ -41,7 +42,7 @@ class RFC implements Rule
 
     public function message(): string
     {
-        if(is_null($this->type)){
+        if (is_null($this->type)) {
             return 'El RFC no tiene un formato válido.';
         }
 
